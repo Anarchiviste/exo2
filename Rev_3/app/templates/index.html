@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercice Json</title>
+  </head>
+  <body>
+    <h1>Tentative numéro uno</h1>
+    <div>
+      <form action="/" method="post">
+        <textarea name="input" rows="10" cols="50">{{data}}</textarea>
+        <button type="submit"> Soumission du Json</button>
+        <p>{{error}}</p>
+        <table border="1">
+          <tr>
+            {% for i in keys %}
+              <th>{{i}}</th>
+            {% endfor %}
+          </tr>
+          <tr>
+            {% for i in keys %}
+              <td>{{result[i]}}</td>
+            {% endfor %}
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
+
