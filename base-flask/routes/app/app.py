@@ -10,9 +10,6 @@ app = Flask(
     static_folder='statics'
 )
 
-'''
-tentative d'éviter le bug chelou
-'''
 
 '''class Base(DeclarativeBase):
     pass
